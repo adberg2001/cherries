@@ -23,8 +23,8 @@ body {
 .cherry {
   object-fit: contain;
   position: absolute;
-  -webkit-filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .9));
-  filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .9));
+  /*-webkit-filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .9));*/
+  /*filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .9));*/
   z-index: 1;
 }
 
