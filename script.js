@@ -1,6 +1,4 @@
-const animEls = document.querySelectorAll('img');
-const cherries = document.querySelector('.cherries');
-
+const animEls = document.querySelectorAll('.cherry');
 
 animEls.forEach(img => {
   //random number between 0 to 90

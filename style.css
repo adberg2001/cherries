@@ -1,8 +1,8 @@
-body{
+body {
   margin: 0;
 }
 
-.main{
+.main {
   position: relative;
   height: 300vh;
   width: 100vw;
@@ -11,27 +11,40 @@ body{
   /*padding: 0 25%;*/
 }
 
-.main:before{
+.main:before {
   content: '';
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(rgba(0,0,0,.0), rgba(0,0,0,1));
+  background: radial-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, 1));
   z-index: 9999;
 }
 
-.main img{
+.cherry {
+  object-fit: contain;
   position: absolute;
-  -webkit-filter: drop-shadow(0 5px 6px rgba(0,0,0,.9));
-  filter: drop-shadow(0 5px 6px rgba(0,0,0,.9));
+  -webkit-filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .9));
+  filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .9));
   z-index: 1;
 }
 
-.cherries{
+.cherries {
   width: 100vw;
   height: 120vh;
-  background: url("./assets/cherries.png") no-repeat center / cover;
+  object-fit: cover;
   position: absolute;
   bottom: 0;
   z-index: 0;
+}
+
+@media only screen and (max-height: 560px) {
+  .cherry {
+      width: 9vw;
+  }
+}
+
+@media only screen and (min-height: 560px) and (max-width: 568px) {
+  .cherry {
+    width: 25vw;
+  }
 }
